@@ -1,0 +1,75 @@
+<%- include("_header.ejs") %>
+
+    <body>
+        <!-- Create a modal for logging in -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce lorem sem, volutpat id risus ut, hendrerit pharetra
+                    neque. Nam ac urna rhoncus, placerat lectus id, vehicula
+                    ligula. Maecenas semper justo est. Phasellus tincidunt
+                    pulvinar lectus nec faucibus. Nullam cursus, elit euismod
+                    lobortis porttitor, erat nisl semper dui, nec consequat
+                    magna mi id enim.
+                </p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <!-- <span class="about">?</span> -->
+            <a class="Logout">
+                <img
+                    alt="log out button"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzY2NTNfOTkpIj4KPHBhdGggZD0iTTYuNzg4MzggOC4xNDQ3NkM3LjAxOTcyIDcuOTA4NjYgNy4xNDkzOCA3LjU4OTA4IDcuMTQ4OTMgNy4yNTYwOEM3LjE0ODQ5IDYuOTIzMDkgNy4wMTc5NyA2LjYwMzg2IDYuNzg2IDYuMzY4NEM2LjU1NDAzIDYuMTMyOTQgNi4yMzk1NCA2LjAwMDQ1IDUuOTExNDkgNkM1LjU4MzQ0IDUuOTk5NTUgNS4yNjg1OSA2LjEzMTE2IDUuMDM1OTkgNi4zNjU5OEwwLjM2MjkyOCAxMS4xMDk0QzAuMTMwNTQ4IDExLjM0NTMgMCAxMS42NjUyIDAgMTEuOTk4OEMwIDEyLjMzMjQgMC4xMzA1NDggMTIuNjUyMyAwLjM2MjkyOCAxMi44ODgyTDUuMDM1OTkgMTcuNjMxNkM1LjI2ODM4IDE3Ljg2NzUgNS41ODM1NSAxOCA1LjkxMjE5IDE4QzYuMjQwODIgMTggNi41NTYgMTcuODY3NSA2Ljc4ODM4IDE3LjYzMTZDNy4wMjA3NiAxNy4zOTU3IDcuMTUxMzEgMTcuMDc1OCA3LjE1MTMxIDE2Ljc0MjJDNy4xNTEzMSAxNi40MDg2IDcuMDIwNzYgMTYuMDg4NyA2Ljc4ODM4IDE1Ljg1MjhMNC4yMzA2NiAxMy4yNTY2TDE3Ljc2MDkgMTMuMjU2NkMxOC4wODk1IDEzLjI1NjYgMTguNDA0NyAxMy4xMjQxIDE4LjYzNzEgMTIuODg4MkMxOC44Njk0IDEyLjY1MjMgMTkgMTIuMzMyNCAxOSAxMS45OTg4QzE5IDExLjY2NTIgMTguODY5NCAxMS4zNDUzIDE4LjYzNzEgMTEuMTA5NEMxOC40MDQ3IDEwLjg3MzUgMTguMDg5NSAxMC43NDEgMTcuNzYwOSAxMC43NDFMNC4yMzA2NiAxMC43NDFMNi43ODgzOCA4LjE0NDc2WiIgZmlsbD0iIzAwMDAwMCIvPgo8cGF0aCBkPSJNMjEuODk0NyAwSDEwLjEwNTNDOS41NDY5MSAwIDkuMDExNDMgMC4yMTc5OCA4LjYxNjYyIDAuNjA1OTg2QzguMjIxOCAwLjk5Mzk5MiA4IDEuNTIwMjQgOCAyLjA2ODk3VjMuNzI0MTRDOCA0LjA1MzM3IDguMTMzMDggNC4zNjkxMiA4LjM2OTk3IDQuNjAxOTNDOC42MDY4NiA0LjgzNDczIDguOTI4MTUgNC45NjU1MiA5LjI2MzE2IDQuOTY1NTJDOS41OTgxNyA0Ljk2NTUyIDkuOTE5NDYgNC44MzQ3MyAxMC4xNTYzIDQuNjAxOTNDMTAuMzkzMiA0LjM2OTEyIDEwLjUyNjMgNC4wNTMzNyAxMC41MjYzIDMuNzI0MTRWMi40ODI3NkgyMS40NzM3VjIxLjUxNzJIMTAuNTI2M1YyMC4yNzU5QzEwLjUyNjMgMTkuOTQ2NiAxMC4zOTMyIDE5LjYzMDkgMTAuMTU2MyAxOS4zOTgxQzkuOTE5NDYgMTkuMTY1MyA5LjU5ODE3IDE5LjAzNDUgOS4yNjMxNiAxOS4wMzQ1QzguOTI4MTUgMTkuMDM0NSA4LjYwNjg2IDE5LjE2NTMgOC4zNjk5NyAxOS4zOTgxQzguMTMzMDggMTkuNjMwOSA4IDE5Ljk0NjYgOCAyMC4yNzU5VjIxLjkzMUM4IDIyLjQ3OTggOC4yMjE4IDIzLjAwNiA4LjYxNjYyIDIzLjM5NEM5LjAxMTQzIDIzLjc4MiA5LjU0NjkxIDI0IDEwLjEwNTMgMjRIMjEuODk0N0MyMi40NTMxIDI0IDIyLjk4ODYgMjMuNzgyIDIzLjM4MzQgMjMuMzk0QzIzLjc3ODIgMjMuMDA2IDI0IDIyLjQ3OTggMjQgMjEuOTMxVjIuMDY4OTdDMjQgMS41MjAyNCAyMy43NzgyIDAuOTkzOTkyIDIzLjM4MzQgMC42MDU5ODZDMjIuOTg4NiAwLjIxNzk4IDIyLjQ1MzEgMCAyMS44OTQ3IDBaIiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfNjY1M185OSI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iIzAwMDAwMCIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo="
+                />
+            </a>
+        </div>
+        <!-- The Boxes on the page layed out in a grid format -->
+        <div class="card-container">
+            <div class="card" style="width: 18rem">
+                <div class="card-body">
+                    <h2 class="card-title">Create a New Note</h2>
+                    <p class="card-text">
+                        Click here to create a new note, if you do not have any
+                        notes then click here to get started!
+                    </p>
+                    <a
+                        href="http://127.0.0.1:8000/create-note"
+                        class="btn btn-primary"
+                        >Create Note</a
+                    >
+                </div>
+            </div>
+            <div class="card" style="width: 18rem">
+                <div class="card-body">
+                    <h2 class="card-title">My Notes</h2>
+                    <p class="card-text">
+                        Click here to view notes you have created and edit them.
+                        If you have no notes then click "Create Note".
+                    </p>
+                    <a
+                        href="http://127.0.0.1:8000/my-notes"
+                        class="btn btn-primary"
+                        >My Notes</a
+                    >
+                </div>
+            </div>
+            <div class="card" style="width: 18rem">
+                <div class="card-body">
+                    <h2 class="card-title">View Pinboard</h2>
+                    <p class="card-text">
+                        Here you can link notes together using pins and create
+                        whole boards of notes.
+                    </p>
+                    <a
+                        href="http://127.0.0.1:8000/create-note"
+                        class="btn btn-primary"
+                        >View Pinboard</a
+                    >
+                </div>
+            </div>
+        </div>
+        <%- include("_footer.ejs") %>
+    </body>
+</html>
