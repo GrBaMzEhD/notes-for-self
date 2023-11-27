@@ -4,6 +4,7 @@ import {
   getCreateNote,
   getHomepage,
   getMyNotesPage,
+  viewNote,
 } from '../Controllers/pagesController.js';
 
 const router = express.Router();
@@ -11,6 +12,6 @@ const router = express.Router();
 router.get('/', getHomepage);
 router.get('/create-note', getCreateNote);
 router.get('/my-notes', getMyNotesPage);
-router.route('/note/:slug');
+router.route('/note/:slug').get(viewNote);
 
 export default router;

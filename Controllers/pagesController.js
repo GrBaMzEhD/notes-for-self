@@ -18,3 +18,11 @@ export const getMyNotesPage = async (req, res, next) => {
       notes: notes,
     };
 };
+
+export const viewNote = async (req, res, next) => {
+  const note = await Note.findOne({ slug: req.params.slug });
+  res.status(200).render('view-note', { note: note }),
+    {
+      note: note,
+    };
+};
