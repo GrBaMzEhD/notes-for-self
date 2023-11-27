@@ -5,12 +5,12 @@ const loginModal = document.getElementById('loginModal');
 const closeModal = document.querySelector('.close-modal');
 
 function createArray(doc) {
-  docArr = Array.from(doc);
+  const docArr = Array.from(doc);
   return docArr;
 }
 
 function textChange(doc, newText) {
-  createArray(doc);
+  const docArr = createArray(doc);
   docArr.forEach((e) => {
     e.addEventListener('click', () => {
       e.textContent = newText;

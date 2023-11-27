@@ -24,7 +24,21 @@ app.use('/public', express.static('public'));
 app.use(morgan('dev'));
 
 // HTTP Security Headers
-app.use(helmet());
+
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          'https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.js',
+        ],
+      },
+    },
+  })
+);
 
 // Body Parser
 app.use(express.json({ limit: '10kb' }));
