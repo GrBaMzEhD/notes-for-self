@@ -55,7 +55,7 @@ app.use('/api', limiter);
 
 // Routes
 app.use('/', pageRouter);
-app.use('/users', userRouter);
+app.use('/api/v1/users', userRouter);
 app.use('/api/v1/notes', noteRouter);
 
 export default app;

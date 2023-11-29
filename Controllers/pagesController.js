@@ -26,3 +26,7 @@ export const viewNote = async (req, res, next) => {
       note: note,
     };
 };
+
+export const getSignupPage = async (req, res, next) => {
+  res.status(200).render('signup');
+};

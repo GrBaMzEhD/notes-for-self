@@ -1,8 +1,10 @@
 const mainTitle = document.getElementById('title');
 const cardBtn = document.querySelectorAll('.btn-primary');
 const loginBtn = document.getElementById('login');
+const signupBtn = document.getElementById('signup');
 const loginModal = document.getElementById('loginModal');
 const closeModal = document.querySelector('.close-modal');
+const loginModalText = document.getElementById('loginModalText');
 const listView = document.getElementById('listView');
 
 function createArray(doc) {
@@ -36,5 +38,11 @@ if (loginBtn) {
         loginModal.style.display = 'none';
       });
     }
+  });
+}
+
+if (signupBtn) {
+  signupBtn.addEventListener('click', () => {
+    window.location.href = '/signup';
   });
 }
