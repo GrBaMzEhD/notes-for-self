@@ -7,6 +7,7 @@ import rateLimit from 'express-rate-limit';
 
 import pageRouter from './Routes/pageRoutes.js';
 import noteRouter from './Routes/noteRoutes.js';
+import userRouter from './Routes/userRoutes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -54,6 +55,7 @@ app.use('/api', limiter);
 
 // Routes
 app.use('/', pageRouter);
+app.use('/users', userRouter);
 app.use('/api/v1/notes', noteRouter);
 
 export default app;

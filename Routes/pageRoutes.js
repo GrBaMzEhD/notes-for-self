@@ -10,6 +10,8 @@ import {
 const router = express.Router();
 
 router.get('/', getHomepage);
+router.get('/login');
+router.get('/signup');
 router.get('/create-note', getCreateNote);
 router.get('/my-notes', getMyNotesPage);
 router.route('/note/:slug').get(viewNote);

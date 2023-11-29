@@ -3,6 +3,7 @@ const cardBtn = document.querySelectorAll('.btn-primary');
 const loginBtn = document.getElementById('login');
 const loginModal = document.getElementById('loginModal');
 const closeModal = document.querySelector('.close-modal');
+const listView = document.getElementById('listView');
 
 function createArray(doc) {
   const docArr = Array.from(doc);
@@ -22,11 +23,9 @@ mainTitle.addEventListener('click', () => {
   window.location.href = '/';
 });
 
-if (cardBtn) {
-  textChange(cardBtn, 'Redirecting...');
-  setTimeout(() => {
-    textChange(cardBtn, 'Yeah');
-  }, 100);
+if (window.location.pathname === '/my-notes') {
+  listView.style.display = 'inline';
+  listView.addEventListener('click', () => {});
 }
 
 if (loginBtn) {

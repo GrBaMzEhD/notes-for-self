@@ -18,6 +18,12 @@ header {
   cursor: pointer;
 }
 
+#listView {
+  display: none;
+  top: 25px;
+  right: 15px;
+}
+
 body {
   min-height: 100vh;
   display: grid;
